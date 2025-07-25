@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Takoyaki Flower Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes spin-slow {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     .spin-slow {
       animation: spin-slow 3s linear infinite;
@@ -22,185 +18,180 @@
 <body class="font-sans">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center p-4 shadow-md">
-    <div class="text-xl font-bold">PlantNest</div>
-    <div class="hidden md:flex gap-6 items-center">
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Contact</a>
-      <button class="relative">
-        🛒
-        <span class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-1 rounded-full">2</span>
-      </button>
+  <nav class="flex justify-between items-center p-6 shadow">
+    <div class="flex items-center gap-2">
+      <img src="assets/logo.png" alt="logo" class="w-6 h-6">
+      <span class="font-bold text-orange-600 text-xl">Takoyaki</span>
     </div>
-    <div class="flex md:hidden items-center gap-2">
-      <span class="text-sm">PlantNest</span>
-      <button>🛒</button>
-    </div>
+    <ul class="hidden md:flex gap-8 text-sm text-gray-700">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About Us</a></li>
+      <li class="flex items-center gap-1">
+        <span>Cart</span> <img src="assets/sample-flower-image.png" class="w-5 h-5"/>
+      </li>
+    </ul>
   </nav>
 
-   <!-- Banner -->
-  <section class="flex flex-col-reverse md:flex-row items-center p-8 gap-6">
-    <div class="md:w-1/2 text-left">
-      <h1 class="text-3xl font-bold mb-4">Welcome to PlantNest</h1>
-      <p>Discover the beauty of indoor gardening. Find your favorite plant today.</p>
+  <!-- Banner -->
+  <section class="flex flex-col-reverse md:flex-row items-center p-10">
+    <div class="md:w-1/2 space-y-4">
+      <h1 class="text-4xl font-bold"><span>ALWAYS</span> <span class="text-orange-600">FRESH</span> FLOWERS</h1>
+      <p class="text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
     </div>
     <div class="md:w-1/2">
-      <img src="flower-store.png" alt="Plant" class="w-full rounded-lg">
+      <img src="assets/hero-flower.png" class="w-full rounded-lg"/>
     </div>
   </section>
 
-   <!-- Plants Section -->
-  <section class="p-8">
-    <h2 class="text-center text-2xl font-bold mb-2">Our Plants</h2>
-    <p class="text-center text-gray-600 mb-6">Fresh, healthy, and ready to brighten your home</p>
+  <!-- Our Plants Section -->
+  <section class="px-10 py-8">
+    <h2 class="text-center text-3xl font-bold text-orange-600 mb-2">Our Plants</h2>
+    <p class="text-center text-gray-600 mb-6">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+   
+      <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
+      </div>
 
-      <!-- Card -->
-      <div class="border rounded-lg p-4 text-center">
-        <img src="sample-flower.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Peace Lily</h3>
-        <p class="text-green-600">$15</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
-     
-      <div class="border rounded-lg p-4 text-center">
-        <img src="news-letter-bg.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Succulent</h3>
-        <p class="text-green-600">$10</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
-       <div class="border rounded-lg p-4 text-center">
-        <img src="news-letter-bg.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Succulent</h3>
-        <p class="text-green-600">$10</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
-       <div class="border rounded-lg p-4 text-center">
-        <img src="news-letter-bg.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Succulent</h3>
-        <p class="text-green-600">$10</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
-       <div class="border rounded-lg p-4 text-center">
-        <img src="news-letter-bg.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Succulent</h3>
-        <p class="text-green-600">$10</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
-       <div class="border rounded-lg p-4 text-center">
-        <img src="news-letter-bg.png" alt="plant" class="mb-2 rounded">
-        <h3 class="font-semibold">Succulent</h3>
-        <p class="text-green-600">$10</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
+      </div>
+       <div class="text-center border rounded-lg p-4">
+        <img src="assets/flower-store.png" class="rounded mb-2"/>
+        <h3 class="font-semibold">Lily Blossom</h3>
+        <p class="text-orange-600 font-bold">20 USD</p>
+        <button class="add-to-cart mt-2 bg-orange-500 text-white px-4 py-1 rounded hover:bg-orange-600">ADD TO CART</button>
       </div>
       
     </div>
   </section>
 
-    <!-- Plant Lover Section -->
-  <section class="flex flex-col md:flex-row items-center p-8 gap-6 relative">
+  <!-- Flower & Plant Lover Section -->
+  <section class="flex flex-col md:flex-row items-center px-10 py-12 relative">
     <div class="md:w-1/2 relative">
-      <img src="trusted-badge.png alt="Plant Lover" class="rounded-lg">
-      <!-- Trusted Badge -->
-      <span class="absolute top-2 right-2 bg-yellow-400 px-2 py-1 rounded-full text-xs font-bold md:block hidden spin-slow">🌟 Trusted</span>
+      <img src="assets/news-letter-bg.png" class="rounded"/>
+      <div class="absolute top-4 right-4 md:block hidden">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="badge" class="w-12 h-12 spin-slow" title="Trusted Plant Lover"/>
+      </div>
     </div>
-    <div class="md:w-1/2 text-left">
-      <h2 class="text-2xl font-bold mb-4">Why Plant Lovers Choose Us</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Eco-friendly packaging</li>
-        <li>Freshly delivered plants</li>
-        <li>100% Satisfaction Guarantee</li>
+    <div class="md:w-1/2 mt-6 md:mt-0 md:ml-10">
+      <h3 class="text-2xl font-bold mb-4">Flower & Plants Lover</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Indulge your senses with the beauty and fragrance of our fresh flower shop.</li>
+        <li>From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+        <li>Perfect for any occasion or gifting needs.</li>
       </ul>
     </div>
   </section>
 
-    <!-- Join Section -->
-  <section class="p-8 bg-cover bg-center text-center text-white" style="background-image: url('https://source.unsplash.com/1200x400/?garden');">
-    <h2 class="text-3xl font-bold mb-4">Join the Colorful Bunch</h2>
-    <div class="flex justify-center mt-4">
-      <input type="email" placeholder="Enter your email" class="p-2 rounded-l outline-none text-black w-64">
-      <button class="bg-green-600 px-4 rounded-r hover:bg-green-700">Subscribe</button>
+  <!-- Latest Deals -->
+  <section class="px-10 py-8">
+    <h2 class="text-center text-2xl font-bold text-orange-600 mb-2">Latest <span class="text-gray-800">Deals</span></h2>
+    <p class="text-center text-gray-600 mb-6">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-lg overflow-hidden">
+        <img src="assets/deal-zabo.png" class="w-full" />
+        <div class="p-4 bg-white text-sm font-semibold">25% Off | Zabo Plant<br/><a href="#" class="text-blue-600">Shop Now</a></div>
+      </div>
+      <div class="rounded-lg overflow-hidden">
+        <img src="assets/flower-store.png" class="w-full" />
+        <div class="p-4 bg-white text-sm font-semibold">30% Off | Rose Plant</div>
+      </div>
+      <div class="rounded-lg overflow-hidden">
+        <img src="assets/sample-flower-image.png" class="w-full" />
+        <div class="p-4 bg-white text-sm font-semibold">50% Off | Mixed Plants</div>
+      </div>
     </div>
+  </section>
+
+  <!-- Join the Colorful Bunch -->
+  <section class="py-16 px-6 text-center text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6')">
+    <h2 class="text-3xl font-bold mb-4">Join the colorful Bunch</h2>
+    <form class="flex justify-center mt-4">
+      <input type="email" placeholder="Write email" class="p-2 rounded-l text-black w-64 outline-none">
+      <button class="bg-orange-600 px-4 rounded-r hover:bg-orange-700">Subscribe</button>
+    </form>
   </section>
 
   <!-- Footer -->
-  <footer class="flex flex-col md:flex-row justify-between items-center p-6 bg-gray-100 mt-8">
-    <div class="text-lg font-semibold">PlantNest</div>
-    <div class="flex gap-4 mt-2 md:mt-0">
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Contact</a>
+  <footer class="bg-gray-100 p-8 mt-10">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <img src="assets/sample-flower-image.png" class="w-6 h-6">
+          <span class="font-bold text-orange-600 text-xl">Takoyaki</span>
+        </div>
+        <p class="text-sm text-gray-600 max-w-sm">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+      </div>
+      <div class="flex flex-wrap gap-8 text-sm text-gray-700">
+        <div>
+          <h4 class="font-semibold mb-2">Explore</h4>
+          <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Shop</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Support</h4>
+          <ul>
+            <li>Pricing</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Follow Us</h4>
+          <div class="flex gap-2">
+            <a href="#"><img src="assets/icon-facebook.png" class="w-5 h-5"/></a>
+            <a href="#"><img src="assets/icon-linkedin.png" class="w-5 h-5"/></a>
+            <a href="#"><img src="assets/icon-twitter.png" class="w-5 h-5"/></a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
-   <!-- Latest Deal Section -->
-  <section class="p-8">
-    <h2 class="text-center text-2xl font-bold mb-2">Latest Deals</h2>
-    <p class="text-center text-gray-600 mb-6">Grab them before they’re gone!</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-       <div class="border rounded-lg p-4 text-center">
-        <img src="assets/hero-flower.png" class="rounded mb-2" />
-        <h3 class="font-semibold">Mini Bonsai</h3>
-        <p class="text-green-600">$12</p>
-        <button class="add-to-cart mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
-      </div>
-      
-      
-    </div>
-  </section>
-
-   <!-- JavaScript -->
+  <!-- JS Alert -->
   <script>
     document.querySelectorAll('.add-to-cart').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -210,3 +201,4 @@
   </script>
 
 </body>
+</html>
